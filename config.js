@@ -1,0 +1,3 @@
+import "dotenv/config";
+export const config={sessionId:process.env.SESSION_ID||"",prefix:process.env.PREFIX||".",mode:process.env.WORK_TYPE||"public",owner:process.env.OWNER||"",sudo:process.env.SUDO||"",alive:process.env.ALIVE||"Zyvox is alive ✓",databaseUrl:process.env.DATABASE_URL||"",sessionDir:process.env.SESSION_DIR||"./session"};
+if(!config.sessionId) throw new Error("SESSION_ID is required");
